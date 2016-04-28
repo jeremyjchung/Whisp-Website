@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Whisp - Account</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="account.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="account.js"></script>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-top" id="nav-bar">
+      <div class="container-fluid" id="nav-container">
+        <div class="navbar-header" id="nav-header">
+          <a class="navbar-brand" href="#"><big class="strong">Whisp</big></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a>a mobile transformation of space</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="signup-login-nav-btns">
+          <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
+          <li><a href = "./home.html" id="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="welcome-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <label><p id="welcome-header"></p></label>
+            <p>Whisp is a fast, lightweight messenger application that will brighten
+              up your day. Keep in touch with your friend using this awesome web application.
+              George Tong will also offer you favors if you use it. Have fun
+              experiencing the mobile transformation of space!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="friends">
+        <div class="row-friends-header">
+          <h4>Friends</h4>
+        </div>
+      </div>
+      <div class="message">
+        <div class="row-message-header">
+          <h4>Messenger</h4>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

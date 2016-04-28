@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Whisp</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="home.js"></script>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" id="nav-container">
+        <div class="navbar-header" id="nav-header">
+          <a class="navbar-brand" href="#"><big class="strong">Whisp</big></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="signup-login-nav-btns">
+          <li><a href="#" data-toggle="modal" data-target="#signupModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="signupModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Sign Up</h4>
+          </div>
+
+          <div class="modal-body">
+              <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" id="firstname" name="firstname">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" Name="lastname">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email-signup" Name="email-signup">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd-signup" Name="pwd-signup">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group">
+              <label for="signup-input-error"><p id="signup-input-error"></p></label>
+              <button id="signup-btn" class="btn btn-default"><big>Sign Up</big></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="signup-success-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><small>&times;</small></button>
+          </div>
+          <div class="modal-body" id="signup-success-modal-body">
+            <h4>Sign Up Successful! &nbsp;
+              <span class="glyphicon glyphicon-ok"></span></h4>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group" id="login-form">
+              <label for="usr">Username/Email:</label>
+              <input type="text" class="form-control" id="login-usr">
+
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="login-pwd">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <label for="login-input-error"><p id="login-input-error"></p></label>
+            <button id="login-btn" type="button" class="btn btn-default"><big>Login</big></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="top-background">
+      <button id="collapse-btn" type="button" class="btn btn-info" data-toggle="collapse" data-target="#welcome-btn">
+        <h4>Welcome to Whisp</h4></button>
+        <div id="welcome-btn" class="collapse">
+         <h1><small class="black">Whisp - dedicated to a mobile transformation of space</small></h1>
+        </div>
+    </div>
+
+    <div id="quote-container" class="container">
+      <blockquote class="blockquote">
+        <p class="quote">The scientific theory I like best is that the rings of Saturn are composed entirely
+        of lost airline luggage<p>
+        <footer class="quote-author">Mark Russell</footer>
+      </blockquote>
+    </div>
+
+
+  </body>
+
+</html>

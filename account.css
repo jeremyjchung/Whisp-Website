@@ -1,0 +1,75 @@
+body{
+  background-color: #80aaff;
+}
+.row-friends-header{
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100%;
+  margin-left: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.row-message-header{
+  text-align: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100%;
+  margin-left: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.friends{
+  border-style: solid;
+  border-width: 1px;
+  height:100%;
+  width:25%;
+  float: left;
+}
+.message{
+  border-style: solid;
+  border-width: 1px;
+  height:100%;
+  width: 100%;
+}
+.container{
+  margin-top: 50px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: white;
+  position:absolute;
+  bottom: 0px;
+  height:92%;
+  left: 10%;
+  width: 80%;
+}
+.col-sm-4 {
+  border-style: solid;
+  border-width: 1px;
+}
+.col-sm-8 {
+  border-style: solid;
+  border-width: 1px;
+}
+#nav-header{
+  margin-right: 0px;
+}
+#welcome-header{
+  font-size: 25px;
+  color:#3333ff;
+}
+#welcome-modal{
+  position: absolute;
+  margin-top: 100px;
+}
+#nav-bar{
+  background-color: #e6e6e6;
+}
+#header{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #000099;
+  color:white;
+}

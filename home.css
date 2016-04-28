@@ -1,0 +1,61 @@
+.top-background{
+  background-image: url(bluegreen_bg.jpg);
+  text-align: center;
+  height: 420px;
+}
+.quote{
+  font-size: 35px;
+  text-align: left;
+  margin-top: 10px;
+}
+.quote-author{
+  font-size: 20px;
+}
+.header{
+  padding: 20px;
+  padding-left: 40px;
+  background-color: #66FF99;
+  margin-top: 30px;
+}
+small.black{
+  color: #FFFFFF;
+}
+#collapse-btn{
+  margin-top:200px;
+}
+#welcome-btn{
+
+  text-align: center;
+}
+#nav-header{
+  margin-left: 50px;
+  width: 100px;
+}
+#nav-container{
+  padding-top: 10px;
+  height: 60px;
+}
+#signup-login-nav-btns{
+  margin-right:15px;
+}
+#login-btn{
+  width:100px;
+}
+#signup-btn{
+  width:100px;
+}
+#signup-input-error{
+  margin-right: 40px;
+  color: #b30000;
+  font-style: italic;
+  visibility: hidden;
+}
+#signup-success-modal-body{
+  text-align: center;
+}
+#login-input-error{
+  margin-right: 40px;
+  color: #b30000;
+  font-style: italic;
+  visibility: hidden;
+}

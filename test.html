@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testing Baby</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <form id="emailForm" class="form-horizontal">
+      <div class="form-group">
+          <label class="col-xs-3 control-label">Email address</label>
+          <div class="col-xs-7">
+              <input type="text" class="form-control" name="email" />
+          </div>
+      </div>
+    </form>
+
+<script>
+$(document).ready(function() {
+    $('#emailForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            email: {
+                validators: {
+                    emailAddress: {
+                        message: 'The value is not a valid email address'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+  </body>
+
+</html>
